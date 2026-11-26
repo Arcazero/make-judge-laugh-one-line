@@ -38,6 +38,9 @@ def main() -> None:
         f"entry.txt mismatch: expected {len(LINE) + 1} chars, "
         f"got {len(written)} chars"
     )
+    # Echo the verified line to stdout so the run's output is visible
+    # without opening entry.txt.
+    print(LINE)
 
 
 if __name__ == "__main__":
